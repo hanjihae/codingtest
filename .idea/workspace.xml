@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15aeae43-925c-4f76-8ae9-ec0c41b8d2cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baekjoon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day1/bk2438.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day1/bk2480.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day1/bk2675.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day1/bk1924.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk11478.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk1152.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk1157.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk1546.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk20291.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk27160.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk2908.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk7785.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day1/bk2438.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/day1/bk2438.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day1/bk2445.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/day1/bk2445.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day1/bk2480.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/day1/bk2480.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day1/bk2675.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/day1/bk2675.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +51,19 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.baekjoon2438.executor": "Run",
+    "Application.bk11478.executor": "Run",
+    "Application.bk1152.executor": "Run",
+    "Application.bk1157.executor": "Run",
+    "Application.bk1546.executor": "Run",
+    "Application.bk1924.executor": "Run",
+    "Application.bk20291.executor": "Run",
     "Application.bk2438.executor": "Run",
     "Application.bk2445.executor": "Run",
+    "Application.bk27160.executor": "Run",
+    "Application.bk2908.executor": "Run",
+    "Application.bk7785.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -61,20 +75,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.bk2445">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="baekjoon" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="bk2438" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day1.bk2438" />
+  <component name="RunManager" selected="Application.bk11478">
+    <configuration name="bk11478" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day2.bk11478" />
       <module name="baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day1.*" />
+          <option name="PATTERN" value="week2.day2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +89,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bk2445" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day1.bk2445" />
+    <configuration name="bk1157" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day2.bk1157" />
       <module name="baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day1.*" />
+          <option name="PATTERN" value="week2.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bk1546" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day2.bk1546" />
+      <module name="baekjoon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bk20291" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day2.bk20291" />
+      <module name="baekjoon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bk7785" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day2.bk7785" />
+      <module name="baekjoon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week2.day2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,9 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.bk2445" />
-        <item itemvalue="Application.bk2438" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.bk11478" />
+        <item itemvalue="Application.bk20291" />
+        <item itemvalue="Application.bk7785" />
+        <item itemvalue="Application.bk1546" />
+        <item itemvalue="Application.bk1157" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716948414860</updated>
-      <workItem from="1716948415889" duration="12169000" />
+      <workItem from="1716948415889" duration="40205000" />
     </task>
     <servers />
   </component>
