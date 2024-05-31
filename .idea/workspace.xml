@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15aeae43-925c-4f76-8ae9-ec0c41b8d2cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/week2/day1/bk1924.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk11478.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk1152.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk1157.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk1546.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk20291.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk27160.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk2908.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week2/day2/bk7785.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day3/bk15650.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day3/bk1764.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day3/bk24263.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day3/bk24265.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day3/bk24267.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day3/bk24313.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day3/bk24416.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week2/day3/bk25192.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day1/bk2438.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/day1/bk2438.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day1/bk2445.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/day1/bk2445.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day1/bk2480.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/day1/bk2480.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day1/bk2675.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week2/day1/bk2675.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2h7cAjIsMHBHsDONoL5HFKnHvCA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,10 +50,19 @@
     "Application.bk1152.executor": "Run",
     "Application.bk1157.executor": "Run",
     "Application.bk1546.executor": "Run",
+    "Application.bk15650.executor": "Run",
+    "Application.bk1764 (1).executor": "Run",
+    "Application.bk1764.executor": "Run",
     "Application.bk1924.executor": "Run",
     "Application.bk20291.executor": "Run",
+    "Application.bk24263.executor": "Run",
+    "Application.bk24265.executor": "Run",
+    "Application.bk24267.executor": "Run",
+    "Application.bk24313.executor": "Run",
     "Application.bk2438.executor": "Run",
+    "Application.bk24416.executor": "Run",
     "Application.bk2445.executor": "Run",
+    "Application.bk25192.executor": "Run",
     "Application.bk27160.executor": "Run",
     "Application.bk2908.executor": "Run",
     "Application.bk7785.executor": "Run",
@@ -75,13 +79,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.bk11478">
-    <configuration name="bk11478" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.day2.bk11478" />
+  <component name="RunManager" selected="Application.bk1764">
+    <configuration name="bk15650" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day3.bk15650" />
       <module name="baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week2.day2.*" />
+          <option name="PATTERN" value="week2.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +93,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bk1157" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.day2.bk1157" />
+    <configuration name="bk1764 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bk1764" />
+      <module name="baekjoon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bk1764" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day3.bk1764" />
       <module name="baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week2.day2.*" />
+          <option name="PATTERN" value="week2.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bk1546" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.day2.bk1546" />
+    <configuration name="bk24313" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day3.bk24313" />
       <module name="baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week2.day2.*" />
+          <option name="PATTERN" value="week2.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,25 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bk20291" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.day2.bk20291" />
+    <configuration name="bk25192" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week2.day3.bk25192" />
       <module name="baekjoon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week2.day2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="bk7785" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week2.day2.bk7785" />
-      <module name="baekjoon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week2.day2.*" />
+          <option name="PATTERN" value="week2.day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.bk11478" />
-        <item itemvalue="Application.bk20291" />
-        <item itemvalue="Application.bk7785" />
-        <item itemvalue="Application.bk1546" />
-        <item itemvalue="Application.bk1157" />
+        <item itemvalue="Application.bk1764" />
+        <item itemvalue="Application.bk1764 (1)" />
+        <item itemvalue="Application.bk25192" />
+        <item itemvalue="Application.bk15650" />
+        <item itemvalue="Application.bk24313" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +165,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716948414860</updated>
-      <workItem from="1716948415889" duration="40205000" />
+      <workItem from="1716948415889" duration="41492000" />
+      <workItem from="1717123225177" duration="16410000" />
     </task>
     <servers />
   </component>
