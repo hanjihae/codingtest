@@ -17,7 +17,7 @@ public class Main {
                 value = 10 + (n -'A');
                 // 예를 들어 n이 0이면 n-'A' = 0, A:10, ... Z:35 이기 때문에 +10
             } else {
-                value = n - '0';
+                value = n - '0';    // 문자열 외 숫자로 된 문자열 있을 때 정수로 변환
             }
             ans = ans * B + value;  // ans = ans * 자릿수(0, 10, 100...) + n에 매핑된 수
         }
