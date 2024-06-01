@@ -8,7 +8,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         for (int i=0; i < str.length(); i+=10) {
             if (str.length() - i < 10) {
-                sb.append(str.substring(i,str.length()));
+                sb.append(str.substring(i));
             } else {
                 sb.append(str.substring(i, i+10)).append("\n");
             }
