@@ -21,7 +21,7 @@ public class Main {
                     for (int k=2; k < 9; k++) {
                         System.out.println(gnome[k]);
                     }
-                    return;
+                    return; // 가짜 난쟁이 찾았으면 프로그램 종료
                 }
             }
         }
