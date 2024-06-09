@@ -10,14 +10,11 @@ public class Main {
     static ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        // 첫 번째 줄에서 정점의 수와 간선의 수, 시작 정점을 읽음
         StringTokenizer st = new StringTokenizer(br.readLine());
         int vertex = Integer.parseInt(st.nextToken()); // 정점의 수
         int edge = Integer.parseInt(st.nextToken());   // 간선의 수
         int start = Integer.parseInt(st.nextToken());  // 시작 정점
-
-        // 그래프와 방문 여부 배열 초기화
+        // 방문 여부 배열 초기화
         visited = new int[vertex+1];
         // 정점의 수만큼 그래프 리스트 초기화
         for (int i = 0; i <= vertex; i++) {
@@ -42,7 +39,6 @@ public class Main {
             System.out.println(visited[i]);
         }
     }
-
     private static void dfs(int start) {
         visited[start] = cnt;   // 현재 정점의 방문 순서 저장
         for (int i=0; i < graph.get(start).size(); i++) {
