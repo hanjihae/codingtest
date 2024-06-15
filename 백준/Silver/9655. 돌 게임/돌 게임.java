@@ -14,7 +14,7 @@ public class Main {
         // n=5일 때 상근 1개 가져갔을 경우 - 4개가 남아 창영이 몇 개를 가져가든 상근 승
         //         상근 3개 가져갔을 경우 - 2개 남아 창영 1개 가져가면 상근 승
         for (int i=4; i <= n; i++) {
-            dp[i] = dp[i-1] + 1;
+            dp[i] = Math.min(dp[i-1], dp[i-3]) + 1;
         }
         if (dp[n] % 2 == 0) {
             System.out.println("CY");
