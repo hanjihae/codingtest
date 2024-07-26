@@ -17,13 +17,11 @@ public class Main {
         int tshirts = 0;    // t장씩 최소 몇 묶음
         for (int i = 0; i < 6; i++) {
             int size = Integer.parseInt(st.nextToken());
-            if (size == 0) {
-                tshirts += 0;
-            } else if (size <= t) {
+            if (size > 0 && size <= t) {
                 tshirts++;
             } else {
                 tshirts += size/t;
-                size = size - t*(size/t);
+                size = size % t;
                 if (size >0 && size <= t) {
                     tshirts++;
                 }
