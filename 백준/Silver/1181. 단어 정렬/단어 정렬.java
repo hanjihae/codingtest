@@ -19,9 +19,8 @@ public class Main {
         for (int i = 0; i < n; i++) {
             set.add(br.readLine());
         }
-        List<String> list = new ArrayList<>(set);
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (String s : set) {
+            System.out.println(s);
         }
     }
 }
