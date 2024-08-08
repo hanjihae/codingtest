@@ -35,8 +35,10 @@ public class Main {
                 return Integer.compare(a.age, b.age);
             }
         });
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            System.out.println(members[i].age + " " + members[i].name);
+            sb.append(members[i].age + " " + members[i].name + "\n");
         }
+        System.out.println(sb);
     }
 }
