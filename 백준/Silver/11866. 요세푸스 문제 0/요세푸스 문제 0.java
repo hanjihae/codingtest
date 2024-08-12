@@ -18,7 +18,7 @@ public class Main {
         int index = 0;
         while(list.size() > 0) {
             index = (index + k - 1) % list.size();  // 현재 인덱스 + k-1만큼 이동 % 남은 인원
-            sb.append(list.remove(index));  // 
+            sb.append(list.remove(index));  // 기록 후 해당 인덱스 삭제
             if (list.size() > 0) sb.append(", ");
         }
         sb.append(">");
