@@ -17,17 +17,17 @@ public class Main {
             int u = Integer.parseInt(st.nextToken());
             int v = Integer.parseInt(st.nextToken());
             graph[u][v] = true;
-            graph[v][u] = true; // 양방향 연결
+            graph[v][u] = true; // 상호간 영향을 주기 때문에 양방향 연결이 필요함
         }
-        int infectedCount = dfs(1) - 1; // 1번 컴퓨터 제외
-        System.out.println(infectedCount);
+        // 1번 컴퓨터 제외하고 계산
+        System.out.println(dfs(1)-1);
     }
 
     public static int dfs(int node) {
-        visited[node] = true;
-        int count = 1;
+        visited[node] = true;   // 현재 노드 방문했는지 확인
+        int count = 1; // 현재 노드 포함해 카운트 시작
         for (int i = 1; i < graph.length; i++) {
-            if (graph[node][i] && !visited[i]) {
+            if (graph[node][i] && !visited[i]) {    // 노드와 이어져있고 방문하지 않았다면 카운트
                 count += dfs(i);
             }
         }
