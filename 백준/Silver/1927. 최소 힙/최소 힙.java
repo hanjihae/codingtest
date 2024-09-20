@@ -1,23 +1,27 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-        for (int i = 0; i < N; i++) {
-            int x = Integer.parseInt(br.readLine());
-            if (x == 0) {   // x가 0이라면 배열에서 가장 작은 값 출력
-                if (minHeap.isEmpty()) {    // 배열이 비어 있는 경우 0 출력
-                    System.out.println("0");
+        int n = Integer.parseInt(br.readLine());
+        StringBuilder sb = new StringBuilder();
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for (int i=0; i < n; i++) {
+            int num = Integer.parseInt(br.readLine());
+            if (num == 0) {
+                if (pq.isEmpty()) {
+                    sb.append(0).append("\n");
                 } else {
-                    System.out.println(minHeap.poll());
+                    sb.append(pq.poll()).append("\n");
                 }
-            } else {    // x가 자연수라면 배열에 추가
-                minHeap.add(x);
+            }
+            else {
+                pq.add(num);
             }
         }
+        System.out.println(sb);
     }
 }
