@@ -10,10 +10,10 @@ public class Main {
         for (int i=0; i < t; i++) {
             String p = br.readLine();
             int n = Integer.parseInt(br.readLine());
-            String input = br.readLine().replace("[", "").replace("]", "");
+            String input = br.readLine();
             Deque<Integer> deque = new ArrayDeque<>();
             if (!input.isEmpty()) {
-                StringTokenizer st = new StringTokenizer(input, ",");
+                StringTokenizer st = new StringTokenizer(input.substring(1, input.length()-1), ",");
                 while(st.hasMoreTokens()) {
                     deque.add(Integer.parseInt(st.nextToken()));
                 }
