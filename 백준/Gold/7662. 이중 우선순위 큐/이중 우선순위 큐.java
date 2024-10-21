@@ -8,14 +8,14 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int t = Integer.parseInt(br.readLine());
-        for (int i=0; i < t; i++) {
+        for (int i = 0; i < t; i++) {
             int k = Integer.parseInt(br.readLine());
             // 최소힙
             PriorityQueue<Integer> minQueue = new PriorityQueue<>();
             // 최대힙
             PriorityQueue<Integer> maxQueue = new PriorityQueue<>(Collections.reverseOrder());
             HashMap<Integer, Integer> map = new HashMap<>();
-            for (int j=0; j < k; j++) {
+            for (int j = 0; j < k; j++) {
                 StringTokenizer st = new StringTokenizer(br.readLine());
                 String str = st.nextToken();
                 int num = Integer.parseInt(st.nextToken());
@@ -37,23 +37,18 @@ public class Main {
             if (map.isEmpty()) {    // 맵이 비어있으면 EMPTY 출력
                 sb.append("EMPTY\n");
             } else {
-                // 큐에서 제거된 요소를 동기화
-                while (!maxQueue.isEmpty() && map.getOrDefault(maxQueue.peek(), 0) == 0) {
-                    maxQueue.poll();
-                }
-                while (!minQueue.isEmpty() && map.getOrDefault(minQueue.peek(), 0) == 0) {
-                    minQueue.poll();
-                }
-                int max = maxQueue.peek();
-                int min = minQueue.peek();
+                // 큐에서 유효한 최댓값 찾기
+                int max = findValidElement(maxQueue, map);
+                // 큐에서 유효한 최솟값 찾기
+                int min = findValidElement(minQueue, map);
                 sb.append(max).append(" ").append(min).append("\n");
             }
         }
         System.out.println(sb);
     }
 
-    public static int removeElement(PriorityQueue<Integer> queue, HashMap<Integer, Integer> map) {
-        while(!queue.isEmpty()) {
+    public static void removeElement(PriorityQueue<Integer> queue, HashMap<Integer, Integer> map) {
+        while (!queue.isEmpty()) {
             int element = queue.poll();
             // 해당 숫자의 빈도수 조회
             int cnt = map.getOrDefault(element, 0);
@@ -63,8 +58,17 @@ public class Main {
             } else {    // 빈도가 1 이상이면 빈도를 1 감소
                 map.put(element, cnt - 1);
             }
-            return element;
+            break; // 유효한 값을 제거했으므로 종료
         }
-        return 0;   // 큐가 비어있는 경우
+    }
+
+    public static int findValidElement(PriorityQueue<Integer> queue, HashMap<Integer, Integer> map) {
+        while (!queue.isEmpty()) {
+            int element = queue.poll();
+            if (map.containsKey(element)) {
+                return element;
+            }
+        }
+        return 0; // 유효한 값이 없는 경우
     }
 }
