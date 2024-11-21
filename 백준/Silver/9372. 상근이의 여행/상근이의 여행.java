@@ -12,8 +12,8 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < t; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
-            int n = Integer.parseInt(st.nextToken());   // 비행기 수
-            int m = Integer.parseInt(st.nextToken());   // 들려야 하는 국가 수
+            int n = Integer.parseInt(st.nextToken());   // 국가 수
+            int m = Integer.parseInt(st.nextToken());   // 비행기 수
             int[][] airplanes = new int[n + 1][n + 1];
             for (int j = 0; j < m; j++) {
                 st = new StringTokenizer(br.readLine());
