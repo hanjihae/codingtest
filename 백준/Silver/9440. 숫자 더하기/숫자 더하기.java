@@ -30,24 +30,15 @@ public class Main {
             }
             int num1 = 0;
             int num2 = 0;
-            int index = (n / 2) - 1;    // 자릿수 계산 인덱스
-            if (n % 2 == 0) {   // n이 짝수일 때
-                for (int i=0; i < n; i++) {
-                    if (i % 2 == 0) {   // 인덱스가 짝수일 때
-                        num1 += nums[i] * Math.pow(10, index);  // num1에 추가
-                    } else {    // 인덱스가 홀수일 때
-                        num2 += nums[i] * Math.pow(10, index);  // num2에 추가
-                        index--;    // 자릿수 감소
-                    }
-                }
-            } else {    // n이 홀수일 때
-                for (int i=0; i < n; i++) {
-                    if (i % 2 == 0) {   // 인덱스가 짝수일 때
-                        num1 += nums[i] * Math.pow(10, index + 1);  // num1에 추가
-                    } else {    // 인덱스가 홀수일 때
-                        num2 += nums[i] * Math.pow(10, index);  // num2에 추가
-                        index--;    // 자릿수 감소
-                    }
+            int idx1 = (n - 1) / 2;  // num1의 시작 자릿수
+            int idx2 = (n / 2) - 1;    // num2의 시작 자릿수
+
+            // 숫자를 두 그룹으로 나누어 합 계산
+            for (int i = 0; i < n; i++) {
+                if (i % 2 == 0) {
+                    num1 += nums[i] * Math.pow(10, idx1--);
+                } else {
+                    num2 += nums[i] * Math.pow(10, idx2--);
                 }
             }
             sb.append(num1 + num2).append("\n");
