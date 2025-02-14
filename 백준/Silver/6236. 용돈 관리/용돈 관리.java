@@ -26,7 +26,7 @@ public class Main {
 
     public static int binarySearch(int max) {
         int low = max;
-        int high = 10_000 * 100_000;
+        int high = 10_000 * 100_000;    // k의 최댓값
         while (low <= high) {
             int mid = (low + high) / 2;
             if (canWithdraw(mid)) {
@@ -40,13 +40,13 @@ public class Main {
 
     // k원씩 인출해서 m번 이내로 쓸 수 있는지
     private static boolean canWithdraw(int k) {
-        int withdrawCnt = 1;
-        int money = k;
+        int withdrawCnt = 1;    // 첫 인출은 이미 진행된 것으로 간주
+        int money = k;  // 첫 인출 후 잔액
         for (int i = 1; i <= n; i++) {
             money -= plan[i];   // 하루 쓸 돈 차감
             if (money < 0) {  // 남은 돈이 계획된 금액보다 적다면
                 ++withdrawCnt;  // 인출 횟수 증가
-                money = k - plan[i];    // 남은 돈 k원 갱신
+                money = k - plan[i];    // 남은 돈 갱신
             }
         }
         return withdrawCnt <= m;
