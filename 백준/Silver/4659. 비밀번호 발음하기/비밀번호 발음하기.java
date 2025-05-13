@@ -5,11 +5,10 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
+        StringBuilder sb = new StringBuilder();
         while(true) {
             String input = br.readLine();
             if (input.equals("end")) break;
-            
             if (isAcceptable(input)) {
                 System.out.println("<" + input + "> is acceptable.");
             } else {
@@ -23,7 +22,6 @@ public class Main {
         int vowelSeq = 0;   // 연속된 모음 카운트
         int consonantSeq = 0;   // 연속된 자음 카운트
         char prev = ' ';    // 이전 글자
-        
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
             if (isVowel(c)) {   // 모음이면
@@ -34,25 +32,20 @@ public class Main {
                 consonantSeq++;
                 vowelSeq = 0;
             }
-            
             // 2. 모음 or 자음 3개 연속 X
             if (vowelSeq >= 3 || consonantSeq >= 3) {
                 return false;
             }
-            
             // 3. 같은 글자 연속 X, but ee/oo 가능
             if (i >= 1 && prev == c && !(c == 'e' || c == 'o')) {
                 return false;
             }
-            
             prev = c;
         }
-        
         // 1. 모음 무조건 포함
         if (vowelCnt == 0) {
             return false;
         }
-        
         return true;
     }
 
