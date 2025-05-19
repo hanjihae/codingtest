@@ -1,27 +1,27 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int[] gnome = new int[9];
+        int[] gnome = new int[9];   // 9명 중 2명 가짜
         int sum = 0;
-        for (int i=0; i < 9; i++) {
+        for (int i = 0; i < 9; i++) {
             gnome[i] = Integer.parseInt(br.readLine());
-            sum += gnome[i];    // 아홉 난쟁이 키의 합
+            sum += gnome[i];
         }
-        for (int i=0; i < 8; i++) {
-            for (int j=i+1; j < 9; j++) {
-                if (sum - gnome[i] - gnome[j] == 100) { // 모든 난쟁이 키의 합에서 두 난쟁이의 키를 뺐을 때 100인 경우
+        for (int i = 0; i < 8; i++) {
+            for (int j = i+1; j < 9; j++) {
+                if (sum - gnome[i] - gnome[j] == 100) { // 합계에서 2명 난쟁이 키 제외했을 때 100이면 그 2명이 가짜
                     gnome[i] = 0;
                     gnome[j] = 0;
-                    Arrays.sort(gnome); // 오름차순 정렬
-                    // 오름차순 정렬시 0 처리된 두 난쟁이의 인덱스는 각가 0, 1이므로 gnome[2]~gnome[8] 출력
-                    for (int k=2; k < 9; k++) {
+                    Arrays.sort(gnome);
+                    for(int k=2; k < 9; k++) {  // 가짜 제외하고 출력
                         System.out.println(gnome[k]);
                     }
-                    return; // 가짜 난쟁이 찾았으면 프로그램 종료
+                    return; // 조건에 맞는 가짜 2명 찾으면 종료
                 }
             }
         }
